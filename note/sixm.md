@@ -135,7 +135,8 @@ public class second{
 
 ### 多分支语句
 
-```switch(值){
+```
+switch(值){
     case值1：
         语句一
         break;
@@ -145,7 +146,8 @@ public class second{
     default:
         语句三
         break;
-}```
+}
+```
 
 注意：小括号里面的值是 byte short  int  char enum  1.7String类型
 
@@ -166,5 +168,34 @@ switch判断的过程效率更高,但只能做“==”判断
 
 
 ```java
-
+System.out.println("请输入分数");
+        Scanner input_2 = new Scanner(System.in);
+        int result = input_2.nextInt() / 10;
+        switch (result){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("不及格");
+                break;
+            case 6:
+                System.out.println("及格");
+                break;
+            case 7:
+                System.out.println("中");
+                break;
+            case 8:
+                System.out.println("良");
+                break;
+            case 9:
+                System.out.println("优秀");
+                break;
+            case 10:
+                System.out.println("满分");
+                break;
+            default:
+                System.out.println("数据错误");
+        }
 ```
