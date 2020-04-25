@@ -89,8 +89,10 @@ public class second {
                 System.out.println("优秀");
                 break;
             case 10:
+                if(result % 10 == 0){
                 System.out.println("满分");
                 break;
+                }
             default:
                 System.out.println("数据错误");
         }

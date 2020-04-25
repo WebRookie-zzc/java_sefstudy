@@ -193,8 +193,9 @@ System.out.println("请输入分数");
                 System.out.println("优秀");
                 break;
             case 10:
+            if(result % 10 == 0){
                 System.out.println("满分");
-                break;
+                break;}//排除有10几分的时候
             default:
                 System.out.println("数据错误");
         }
